@@ -1,0 +1,211 @@
+body {
+  background-color: #9884a1;
+  font-family: "Roboto Slab", serif;
+  color: rgb(247, 247, 247);
+}
+
+.list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header2 {
+  display: none;
+}
+
+.header {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+
+  width: 90%;
+  height: 70px;
+  margin: 30px auto;
+  margin-bottom: 0px;
+}
+
+.task-name-input,
+.task-desc-input {
+  font-family: "Roboto Slab", serif;
+  display: block;
+  width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #220d2c;
+}
+
+.task-desc-input {
+  height: 100px;
+  resize: none;
+}
+
+.add-btn {
+  margin: 15px 400px;
+  justify-self: end;
+  padding: 10px 20px;
+  background: #6a2c87;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto Slab", serif;
+}
+
+.add-btn:hover {
+  background: #45195a;
+}
+
+/* .list {
+  font-size: 25px;
+  margin: 20px auto;
+  width: 500px;
+} */
+
+li {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  background: #6a2c87;
+  margin: 20px 100px;
+  border-radius: 6px;
+  /* box-shadow: 5px 5px 6px #220e2b, -5px -5px 6px #6a2c87; */
+}
+
+.task-content {
+  max-width: 80%;
+}
+
+.task-content strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.task-content p {
+  margin: 0;
+  font-size: 20px;
+  color: #d7d7d7;
+}
+
+.delete-btn {
+  background: #fff;
+  margin-right: 10px;
+  border: none;
+  color: #461d59;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 50px;
+  align-self: center;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.delete-btn:hover {
+  background: #b06ba8;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d7d7d7;
+  margin: 15px 0;
+  width: 800px;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    font-size: 35px;
+  }
+
+  .task-name-input,
+  .task-desc-input {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .add-btn {
+    margin: 15px auto;
+    width: fit-content;
+    padding: 10px 15px;
+  }
+
+  li {
+    margin: 10px auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-content {
+    max-width: 100%;
+  }
+
+  .delete-btn {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    font-size: 24px;
+  }
+  .task-name-input,
+  .task-desc-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .add-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  .task-content strong {
+    font-size: 16px;
+  }
+
+  .task-content p {
+    font-size: 12px;
+  }
+
+  .delete-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
